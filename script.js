@@ -67,7 +67,7 @@ Product.applyDiscount(store.inventory, 0.15);
 console.log("Inventory Value After Discount: $", store.getInventoryValue().toFixed(2));
 
 const foundProduct = store.findProductByName("Apple");
-    if (foundProduct = true) {
+    if (foundProduct) {
         console.log("Details of Searched Product:", foundProduct.toString());
     } else {
         console.log("Product not found.");
