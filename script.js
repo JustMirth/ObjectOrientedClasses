@@ -49,4 +49,5 @@ class Store {
 }
 
 //Part 5
-const product1 = Product ("Gum", 0.99, 100)
+const product1 = Product ("Gum", 0.99, 250);
+const product2 = Product ("Chocolate Bar", 1.99, 50);
