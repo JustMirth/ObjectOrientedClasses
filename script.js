@@ -29,8 +29,8 @@ class PerishableProduct extends Product {
         return `Product: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}, Expiration Date: ${this.expirationDate}`;
     }
 }
-const Perishable1 = PerishableProduct ("Apple", 2.50, 50, "2024-12-18");
-const Perishable2 = PerishableProduct ("Milk", 1.50, 10, "2024-12-31");
+const Perishable1 = new PerishableProduct ("Apple", 2.50, 50, "2024-12-18");
+const Perishable2 = new PerishableProduct ("Milk", 1.50, 10, "2024-12-31");
 
 //Part 4
 class Store {
@@ -49,11 +49,11 @@ class Store {
 }
 
 //Part 5
-const product1 = Product ("Gum", 0.99, 250);
-const product2 = Product ("Chocolate Bar", 1.99, 50);
-const product3 = Product ("Gatorade", 2.99, 75);
-const product4 = PerishableProduct ("Apple", 2.50, 50, "2024-12-18");
-const product5 = PerishableProduct ("Milk", 1.50, 10, "2024-12-31");
+const product1 = new Product ("Gum", 0.99, 250);
+const product2 = new Product ("Chocolate Bar", 1.99, 50);
+const product3 = new Product ("Gatorade", 2.99, 75);
+const product4 = new PerishableProduct ("Apple", 2.50, 50, "2024-12-18");
+const product5 = new PerishableProduct ("Milk", 1.50, 10, "2024-12-31");
 
 const store = new Store();
 store.addProduct(product1);
