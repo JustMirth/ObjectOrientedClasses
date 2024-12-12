@@ -9,7 +9,7 @@ class Product {
         return this.price * this.quantity
     }
     toString() {
-        return `Product: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`;
+        return `Product: ${this.name}, Price: ${this.price.toFixed(2)}, Quantity: ${this.quantity}`;
     }
     //Part 3
     static applyDiscount(products, discount) {
@@ -26,7 +26,7 @@ class PerishableProduct extends Product {
         this.expirationDate = expirationDate;
     }
     toString() {
-        return `Product: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}, Expiration Date: ${this.expirationDate}`;
+        return `Product: ${this.name}, Price: ${this.price.toFixed(2)}, Quantity: ${this.quantity}, Expiration Date: ${this.expirationDate}`;
     }
 }
 const Perishable1 = new PerishableProduct ("Apple", 2.50, 50, "2024-12-18");
@@ -61,3 +61,5 @@ store.addProduct(product2);
 store.addProduct(product3);
 store.addProduct(product4);
 store.addProduct(product5);
+
+console.log("Inventory Value Before Discount: $", store.getInventoryValue().toFixed(2));
