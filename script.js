@@ -47,3 +47,6 @@ class Store {
         return this.inventory.find(product => product.name === name) || null;
     }
 }
+
+//Part 5
+const product1 = Product ("Gum", 0.99, 100)
