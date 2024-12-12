@@ -56,3 +56,8 @@ const product4 = PerishableProduct ("Apple", 2.50, 50, "2024-12-18");
 const product5 = PerishableProduct ("Milk", 1.50, 10, "2024-12-31");
 
 const store = new Store();
+store.addProduct(product1);
+store.addProduct(product2);
+store.addProduct(product3);
+store.addProduct(product4);
+store.addProduct(product5);
