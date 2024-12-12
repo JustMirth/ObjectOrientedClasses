@@ -63,3 +63,5 @@ store.addProduct(product4);
 store.addProduct(product5);
 
 console.log("Inventory Value Before Discount: $", store.getInventoryValue().toFixed(2));
+Product.applyDiscount(store.inventory, 0.15);
+console.log("Inventory Value After Discount: $", store.getInventoryValue().toFixed(2));
