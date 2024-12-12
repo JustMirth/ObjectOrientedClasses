@@ -51,3 +51,4 @@ class Store {
 //Part 5
 const product1 = Product ("Gum", 0.99, 250);
 const product2 = Product ("Chocolate Bar", 1.99, 50);
+const product3 = Product ("Gatorade", 2.99, 75);
