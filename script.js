@@ -1,5 +1,5 @@
 //Part 1
-class ProductProperties {
+class Product {
     constructor(name, price, quantity) {
         this.name = name;
         this.price = price;
@@ -18,8 +18,9 @@ class ProductProperties {
         });
     }
 }
+
 //Part 2
-class PerishableProductProperties extends ProductProperties {
+class PerishableProduct extends Product {
     constructor (name, price, quantity, expirationDate) {
         super(name, price, quantity);
         this.expirationDate = expirationDate;
@@ -28,5 +29,12 @@ class PerishableProductProperties extends ProductProperties {
         return `Product: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}, Expiration Date: ${this.expirationDate}`;
     }
 }
-const Perishable1 = PerishableProductProperties ("Apple", 2.50, 50, "2024-12-18");
-const Perishable2 = PerishableProductProperties ("Milk", 1.50, 10, "2024-12-31");
+const Perishable1 = PerishableProduct ("Apple", 2.50, 50, "2024-12-18");
+const Perishable2 = PerishableProduct ("Milk", 1.50, 10, "2024-12-31");
+
+//Part 4
+class Store {
+    constructor() {
+        this.inventory = [];
+    }
+}
